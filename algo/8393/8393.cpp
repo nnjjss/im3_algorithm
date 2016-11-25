@@ -1,7 +1,14 @@
-#include <iostream>
-using namespace std;
-int main(){
-	int n;
-	cin >> n;
-	cout << n*(n+1)/2 << '\n';
+#include <stdio.h>
+
+int main() {
+    
+    int n, i, c = 0;
+    scanf("%d", &n);
+    
+    for(i=1; i<=n; i++) {
+        c+=i;
+    }
+    printf("%d\n", c);
+    
+    return 0;
 }
